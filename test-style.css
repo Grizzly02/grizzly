@@ -1,0 +1,457 @@
+head{
+  z-index: 1;
+  font-family: 'Kiwi Maru', serif;
+}
+#page {
+  margin: 0 auto;
+  width: 900px;
+}
+
+#img {
+  text-align: left;
+  margin-left: 403px;
+  padding-top: 10px;
+  margin-top: 0;
+  /*display: inline-block;*/
+}
+
+#img1 {
+  text-align: center;
+}
+
+/*
+#img2 {
+  margin-right: 400px
+  margin-left: 300px
+}
+*/
+
+/*
+#tel-img{
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+*/
+
+.hov-1:hover {
+  transform: rotateX(360deg);
+}
+
+/*メインコンテンツ*/
+/*
+.main_content{
+  text-align: left;
+  margin-left: 500px;
+  margin-right: 720px;
+}
+
+.main_content_block{
+  text-align: center;
+}
+
+
+.box-img{
+
+}
+
+.box-text{
+
+}
+
+.box-img,
+.box-text{
+  display: inline-block;
+  vertical-align: top;
+}
+*/
+.a img {
+  float: right;
+  /*width: 450px;*/
+}
+
+.a {
+  /*display: inline-block;*/
+  /*padding: 0 380px*/
+  /*width: 450px*/
+  /*float: left;*/
+  padding-left: 340px;
+  padding-right: 340px;
+  text-align: left;
+  margin-bottom: 60px;/*<-----------------下のマージンの間隔*/
+}
+
+/*より機敏に、より親身に、より安心に-----------------------------------------------*/
+.h2-1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 240px;
+  color: #504946;
+}
+
+.h2-1:before, .h2-1:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 220px;
+  height: 2px;
+  border-top: solid 1px #504946;
+  border-bottom: solid 1px #504946;
+}
+
+.h2-1:before {
+  left: 0;
+}
+.h2-1:after {
+  right: 0;
+}
+
+/*アクセス---------------------------------------------------------------------*/
+.h2-2{
+  position: relative;
+  display: inline-block;
+  padding: 0 406px;
+  color: #504946;
+}
+.h2-2:before, .h2-2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 389px;
+  height: 2px;
+  border-top: solid 1px #504946;
+  border-bottom: solid 1px #504946;
+}
+
+.h2-2:before {
+  left: 0;
+}
+.h2-2:after {
+  right: 0;
+}
+
+/*どのようことでお困りですか----------------------------------------------------------*/
+.h2-3{
+  position: relative;
+  display: inline-block;
+  padding: 0 260px;
+  color: #504946;
+}
+.h2-3:before, .h2-3:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 240px;
+  height: 2px;
+  border-top: solid 1px #504946;
+  border-bottom: solid 1px #504946;
+}
+
+.h2-3:before {
+  left: 0;
+}
+.h2-3:after {
+  right: 0;
+}
+
+/*メニューバーのデザイン----------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: 'Open Sans', sans-serif;*/
+  background: #FFFCF6;
+  color: #504946;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  line-height: 2.2em;
+  /*font-family: "ヒラギノ 角ゴ", "メイリオ", sans-serif;*/
+  font-family: 'Kiwi Maru', serif;
+  z-index: 1;
+}
+
+#main {
+  position: relative;
+  list-style: none;
+  background: #F0A399;
+  font-weight: 500;
+  font-size: 0;
+  /*text-transform: uppercase;*/
+  display: inline-block;
+  padding: 0;
+  margin: 20px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#main li {
+  color: #FFFEF2;
+  font-size: 0.8rem;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 120px;
+}
+
+li {
+  margin: 0;
+}
+
+.drop {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 48px;
+}
+
+.drop div {
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  -ms-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+.drop li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: #c7887f !important;
+  font-size: 0.8rem;
+}
+
+#marker {
+  height: 0px;
+  background: #5E667C !important;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+#main li:nth-child(1):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(1):hover~#marker {
+  -webkit-transform: translate(0px 0);
+  -moz-transform: translate(0px 0);
+  -ms-transform: translate(0px 0);
+  transform: translate(0px 0);
+}
+
+#main li:nth-child(2):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(2):hover~#marker {
+  -webkit-transform: translate(120px 0);
+  -moz-transform: translate(120px 0);
+  -ms-transform: translate(120px 0);
+  transform: translate(120px 0);
+}
+
+#main li:nth-child(3):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(3):hover~#marker {
+  -webkit-transform: translate(240px 0);
+  -moz-transform: translate(240px 0);
+  -ms-transform: translate(240px 0);
+  transform: translate(240px 0);
+}
+
+#main li:nth-child(4):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(4):hover~#marker {
+  -webkit-transform: translate(360px 0);
+  -moz-transform: translate(360px 0);
+  -ms-transform: translate(360px 0);
+  transform: translate(360px 0);
+}
+
+#main li:nth-child(5):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(5):hover~#marker {
+  -webkit-transform: translate(480px 0);
+  -moz-transform: translate(480px 0);
+  -ms-transform: translate(480px 0);
+  transform: translate(480px 0);
+}
+
+#main li:nth-child(6):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(6):hover~#marker {
+  -webkit-transform: translate(600px 0);
+  -moz-transform: translate(600px 0);
+  -ms-transform: translate(600px 0);
+  transform: translate(600px 0);
+}
+
+#main :hover {
+  background: #c7887f;
+}
+
+
+/*フッター---------------------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 190px;
+    background-color: #b7ab9f;
+    color: white;
+    text-align: center;
+}
+
+/*
+ul.footer-menu li {
+  font-family: 'Kiwi Maru', serif;
+  display: inline;
+}
+*/
+
+p.font-footer{
+  font-family: 'Source Code Pro', monospace;
+  padding-top: 58px;
+}
+
+/*
+#pageTop {
+  position: fixed;
+  text-align: center;
+  right: 20px;
+  padding-top: 35px;
+}
+
+#pageTop i {
+  color: #F0A399;
+  font-size: 9em;
+}
+
+#pageTop a {
+  display: block;
+  z-index: 999;
+  padding: 8px 0 0 8px;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background-color: #9FD6D2;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+*/
+
+.fa-stack {
+  padding-top: 40px;
+  /*color: #F0A399;*/
+  font-size: 1.8em;
+}
+
+.fa-stack a{
+  color: #F0A399;
+}
+
+.fa-stack a:hover {
+  text-decoration: none;
+  /*opacity: 0.7;*/
+  color: #c7887f;
+}
+
+/*google map------------------------------------------------------------------*/
+#acs{
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+  margin-bottom: 60px;/*<-----------------下のマージンの間隔*/
+}
+#map{
+  text-align: right;
+}
+.acs-text{
+  text-align: left;
+  list-style-type: none;
+}
+.acs-text h4{
+  margin: 0;
+  padding-bottom: 14px;
+  padding-left: 150px;
+  list-style-type: none;
+}
+/*労働問題---------------------------------------------------------------------*/
+.serv{
+  margin-bottom: 60px;/*<-----------------下のマージンの間隔*/
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+/*
+.serv :hover{
+  transform: scale(1.1, 1.1);
+  opacity: 0.8;
+}
+*/
+.serv p{
+  color: ;#504946;
+}
+#serv-1{
+  display: inline-block;
+  background-color: #ebe8e6;
+  padding-top: 23px;
+  height:auto;
+  width: 214px;
+  text-align: center;
+  cursor: pointer;
+  height: 160px;
+}
+#serv-1 p:hover{
+  transform: scale(1.1, 1.1);
+  opacity: 0.8;
+}
